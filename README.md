@@ -19,6 +19,16 @@ The proposed pipeline consists of three models- organ detector, organ estimator 
 The input to piple consists of series of DICOM images from CT scan. Whole scan is parted into series of N sized chunks. Each chunk is loaded and preprocessed before being passed to organ detector and ACE/BOWEL estimator.
 The outputs from those models are then aggregated giving respectively organ patches for liver, spleen and kidneys and state of Bowel and active extravasation. Finally extracted organs are processed again and passed to organ extractor.
 
+## Organ detector
 
+## Organ estimator
+
+## ACE/BOWEL detector
+
+## Training
+
+## Results
+
+# Thoughts and conclusion
 ---
 [1]. Kaggle competition: https://www.kaggle.com/competitions/rsna-2023-abdominal-trauma-detection
