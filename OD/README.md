@@ -12,7 +12,14 @@ Box information was prepared in form of pandas data frame. Each row contained in
 
 Organ placement can be seen after aggregating every box for given organ. Some outlayers can be seen, the reason being different sized of CT scan.
   
-![image](https://github.com/Benu13/Meta3DCNN/assets/39136856/6776cab9-cb60-4b92-b41e-9ab3e32046a8)  
+![image](https://github.com/Benu13/Meta3DCNN/assets/39136856/6776cab9-cb60-4b92-b41e-9ab3e32046a8) 
+
+Example of boxes extracted from segmented CT scan.
+
+
+https://github.com/Benu13/Meta3DCNN/assets/39136856/794b9dd8-c2ba-406c-bdb1-324eb12f0f17
+
+
 
 
 ## Dataset creation
