@@ -35,13 +35,17 @@ extract boxes from segmentation map for every DICOM image in provided, already s
 ![image](https://github.com/Benu13/Meta3DCNN/assets/39136856/cccc6ec9-0840-4093-b418-1643402e33a2)  
 *Image 3. Example of windowed DICOM images with affixed boxes.*  
 
-For this project two YOLOv8 models were trained. First was small sized version and the second medium sized version. Results are included in OrganDetector folder. 
+For this project two YOLOv8 models were trained. First was small sized version and the second medium sized version. Results and additional informations are included in OrganDetector folder. 
 
 ## Organ estimator
 
 ## ACE/BOWEL detector
 Active extravasation and bowell injury detection was done by one model. 
 ![image](https://github.com/Benu13/Meta3DCNN/assets/39136856/27ed1c0a-c6eb-45b8-8394-4918e9ab6a2d)
+*Image 4. Basic overview of A/B detector model.* 
+  
+The idea was based on paper [3]. The main point was to divide CT scan into sections of N scans. Next images in slice would be divided into three parts, ascting as a single image with three channels. Each of the created
+trios would be passed to 2d feature extraction network, like resnet, and aggregated. The output would be passed to 3d reducing network and finally flattened. Finally the head would reduce previous output to 4 values.  
 
 ## Training
 
@@ -51,3 +55,4 @@ Active extravasation and bowell injury detection was done by one model.
 ---
 [1]. Kaggle competition: https://www.kaggle.com/competitions/rsna-2023-abdominal-trauma-detection
 [2]. Ultralytics YoloV8: https://github.com/ultralytics/ultralytics
+[3]. Rachel Lea Draelos et al. "Machine-learning-based multiple abnormality prediction with large-scale chest computed tomography volumes", https://github.com/rachellea/ct-net-models/tree/master.
