@@ -40,6 +40,8 @@ For this project two YOLOv8 models were trained. First was small sized version a
 ## Organ estimator
 
 ## ACE/BOWEL detector
+Active extravasation and bowell injury detection was done by one model. 
+![image](https://github.com/Benu13/Meta3DCNN/assets/39136856/27ed1c0a-c6eb-45b8-8394-4918e9ab6a2d)
 
 ## Training
 
